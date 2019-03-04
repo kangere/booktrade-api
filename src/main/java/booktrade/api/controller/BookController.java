@@ -35,11 +35,11 @@ public class BookController {
         service.deleteUserBook(email,isbn);
     }
 
-    @PutMapping(value = "/api/users/{email}/books/{isbn}")
+    /*@PutMapping(value = "/api/users/{email}/books/{isbn}")
     public ResponseEntity<Object> updateBookDetails(@RequestBody Book book){
         if(service.updateBookDetails(book))
             return ResponseEntity.noContent().build();
 
         return ResponseEntity.notFound().build();
-    }
+    }*/
 }

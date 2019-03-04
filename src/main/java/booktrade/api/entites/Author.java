@@ -1,22 +1,26 @@
 package booktrade.api.entites;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import javax.persistence.*;
+
 
 @Entity(name = "authors")
 public class Author {
 
     @Id
-    @Column(name = "author_id",updatable = false)
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "author_id", updatable = false)
     private Long authorId;
 
 
-    private String fname;
+    @Column(name = "fname")
+    private String Fname;
 
-    private String lname;
+    @Column(name = "lname")
+    private String Lname;
+
+    @Column(name = "mname")
+    private String Mname;
 
 
     public Author() {
@@ -31,18 +35,27 @@ public class Author {
     }
 
     public String getFname() {
-        return fname;
+        return Fname;
     }
 
     public void setFname(String fname) {
-        this.fname = fname;
+        this.Fname = fname;
     }
 
     public String getLname() {
-        return lname;
+        return Lname;
     }
 
     public void setLname(String lname) {
-        this.lname = lname;
+        this.Lname = lname;
+    }
+
+
+    public String getMname() {
+        return Mname;
+    }
+
+    public void setMname(String mname) {
+        Mname = mname;
     }
 }

@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface BookRepository extends CrudRepository<Book,Integer> {
+public interface BookRepository extends CrudRepository<Book,Long> {
 
     /**
      * Finds all the books the book details for those books that are available in stock

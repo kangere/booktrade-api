@@ -1,8 +1,10 @@
 package booktrade.api.service;
 
+import booktrade.api.entites.Author;
 import booktrade.api.entites.Book;
 import booktrade.api.entites.OwnedBook;
 import booktrade.api.entites.OwnedBooksPK;
+import booktrade.api.repository.AuthorRepository;
 import booktrade.api.repository.BookRepository;
 import booktrade.api.repository.OwnedBooksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,9 @@ public class BookService {
     @Autowired
     private OwnedBooksRepository ownedBooksRepository;
 
+    @Autowired
+    private AuthorRepository authorRepository;
+
     //cache of existing book details
     //To reduce number of calls to book table
     //TODO: Find a more standard way of doing this
@@ -28,9 +33,14 @@ public class BookService {
 
         Book b = owned.getBook();
         //Check if book details already exist
-        if(!bookExists(b))
-            bookRepository.save(b);
+        if(!bookExists(b)) {
+            //Save Authors
+            List<Author> authors = b.getAuthors();
+            authors.forEach(auth -> authorRepository.save(auth));
 
+            //save books
+            bookRepository.save(b);
+        }
 
         ownedBooksRepository.save(owned);
     }
@@ -87,6 +97,9 @@ public class BookService {
     public boolean updateBookDetails(Book book){
         if(!bookExists(book))
             return false;
+
+        Book old = bookRepository.findById(book.getIsbn()).get();
+
 
         bookRepository.save(book);
         return true;

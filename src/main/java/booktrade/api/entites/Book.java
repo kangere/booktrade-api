@@ -1,8 +1,7 @@
 package booktrade.api.entites;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 
 @Entity(name = "books")
@@ -25,6 +24,14 @@ public class Book {
 
     @Column(name = "external_link")
     private String externalLink;
+
+    @OneToMany
+    @JoinTable(
+            name = "author_books",
+            joinColumns = {@JoinColumn(name = "isbn",referencedColumnName = "isbn")},
+            inverseJoinColumns = {@JoinColumn(name="author_id",referencedColumnName = "author_id")}
+    )
+    private List<Author> authors;
 
     public Book() {
     }
@@ -86,5 +93,11 @@ public class Book {
         this.externalLink = externalLink;
     }
 
+    public List<Author> getAuthors() {
+        return authors;
+    }
 
+    public void setAuthors(List<Author> authors) {
+        this.authors = authors;
+    }
 }
