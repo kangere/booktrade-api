@@ -1,5 +1,7 @@
 package booktrade.api.config;
 
+import booktrade.api.exception.UserNotFoundException;
+import booktrade.api.exception.WrongPasswordException;
 import booktrade.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -30,7 +32,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         UserDetails user = userService.loadUserByUsername(email);
 
         if(user == null)
-            throw new BadCredentialsException("Authentication failed for " + email);
+            throw new UserNotFoundException("User Not Found" + email);
+
+        if(!user.getPassword().equals(password))
+            throw new WrongPasswordException();
 
         System.out.println(user.toString());
         List<GrantedAuthority>  authorities = new ArrayList<>(user.getAuthorities());
