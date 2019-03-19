@@ -1,6 +1,7 @@
 package booktrade.api.entites;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @IdClass(OwnedBooksPK.class)
 @Entity(name = "owned_books")
@@ -29,18 +30,22 @@ public class OwnedBook {
     @Enumerated(EnumType.STRING)
     private TradeType tradeType;
 
+    private BigDecimal price;
+
+
     @ManyToOne
     @JoinColumn(name = "book_isbn", referencedColumnName = "isbn",updatable = false,insertable = false)
     private Book book;
 
     public OwnedBook(){}
 
-    public OwnedBook(Long isbn, String email, BookCondition bookCondition, TradeType tradeType, Book book) {
+    public OwnedBook(Long isbn, String email, BookCondition bookCondition, TradeType tradeType, BigDecimal price, Book book) {
         this.isbn = isbn;
         this.email = email;
         this.bookCondition = bookCondition;
         this.tradeType = tradeType;
         this.book = book;
+        this.price =price;
     }
 
     public Long getIsbn() {
@@ -81,5 +86,13 @@ public class OwnedBook {
 
     public void setBook(Book book) {
         this.book = book;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 }

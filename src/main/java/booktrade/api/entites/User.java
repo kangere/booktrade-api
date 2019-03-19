@@ -33,7 +33,7 @@ public class User {
     private String password;
 
     @Column(name = "phonenumber")
-    private int phoneNumber;
+    private Long phoneNumber;
 
     @Column(name = "country_code")
     private int countryCode;
@@ -50,7 +50,7 @@ public class User {
 
     }
 
-    public User(String email, String firstName, String lastName, String password, int phoneNumber, int countryCode, String username, AccountType accountType) {
+    public User(String email, String firstName, String lastName, String password, Long phoneNumber, int countryCode, String username, AccountType accountType) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -95,11 +95,11 @@ public class User {
         this.password = password;
     }
 
-    public int getPhoneNumber() {
+    public Long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
