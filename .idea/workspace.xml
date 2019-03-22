@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f14da9b-4491-4e02-97e2-7e070d5a7137" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/entites/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/repository/RequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/service/RequestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/entites/OwnedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/entites/OwnedBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/entites/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/entites/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/entites/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook$BookCondition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook$BookCondition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook$TradeType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook$TradeType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/service/UserService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,90 +35,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            <state relative-caret-position="526">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1602#1603#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/OwnedBook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
-                <element signature="e#1961#1962#0" expanded="true" />
-                <element signature="e#1995#1996#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/Author.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="150">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/exception/UserNotFoundException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/Request.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/exception/WrongPasswordException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/config/SpringSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="195">
+              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1504#1505#0" expanded="true" />
+                <element signature="e#1541#1542#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/BookRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -113,22 +75,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="53" column="57" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="57" />
+            <state relative-caret-position="150">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="33" column="53" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2851#2852#0" expanded="true" />
+                <element signature="e#2907#2908#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,20 +115,15 @@
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/MyUserPrincipal.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/service/OwnedBookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/config/SpringSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/repository/OwnedBooksRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/OwnedBooksPK.java" />
-        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/AuthorBookPK.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/repository/AuthorRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/repository/AuthorBookRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/AuthorBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/Author.java" />
-        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/repository/BookRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/service/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/exception/UserNotFound.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/exception/UserNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/exception/WrongPasswordException.java" />
@@ -186,14 +133,22 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/OwnedBook.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/entites/Request.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/service/RequestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/repository/BookRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/repository/RequestRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/booktrade/api/service/BookService.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1366" />
-    <option name="y" value="-2" />
-    <option name="width" value="1920" />
-    <option name="height" value="1082" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="1439" />
+    <option name="y" value="27" />
+    <option name="width" value="927" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -201,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,7 +265,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -320,7 +275,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553023651622" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553122225087" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../course-api-data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -387,7 +342,9 @@
       <workItem from="1552489565446" duration="7114000" />
       <workItem from="1552675962984" duration="6096000" />
       <workItem from="1552771109466" duration="3395000" />
-      <workItem from="1552923986669" duration="7551000" />
+      <workItem from="1552923986669" duration="7634000" />
+      <workItem from="1553083709197" duration="7683000" />
+      <workItem from="1553164231783" duration="5681000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Authors insertion and relation to books, added and tested delete endpoint">
       <created>1551733816725</created>
@@ -410,11 +367,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552530066002</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed user phonenumber type to Long, Added price member to OwnedBook entity">
+      <created>1553023715520</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553023715520</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116449000" />
+    <option name="totallyTimeSpent" value="129896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,10 +390,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1433" y="25" width="1853" height="1055" extended-state="7" />
+    <frame x="1439" y="27" width="927" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15605977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.307605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -439,7 +403,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19546436" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3560606" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26349893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -473,7 +437,8 @@
     <MESSAGE value="Implemented Authors insertion and relation to books, added and tested delete endpoint" />
     <MESSAGE value="Implemented simple password verification, added custom exceptions, added controller advice for bad credentials handling" />
     <MESSAGE value="changed mysql driver to 8.0.15, changed default port to 8081" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed mysql driver to 8.0.15, changed default port to 8081" />
+    <MESSAGE value="Changed user phonenumber type to Long, Added price member to OwnedBook entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed user phonenumber type to Long, Added price member to OwnedBook entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -541,16 +506,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/OwnedBookService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/OneToMany.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -577,16 +532,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/AuthorBookPK.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/AuthorBookRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/OwnedBooksRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -602,16 +547,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/AuthorBook.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/AuthorRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -625,19 +560,6 @@
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/controller/BadCredentialsAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding>
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -659,26 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -690,50 +592,6 @@
             <element signature="e#2114#2115#0" expanded="true" />
             <element signature="e#2152#2153#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="33" column="53" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/BookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -753,7 +611,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/config/SpringSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="105">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -761,27 +619,164 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/OwnedBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        <state relative-caret-position="435">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
-            <element signature="e#1995#1996#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/AuthorRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/OwnedBooksRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/RequestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/controller/BadCredentialsAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2851#2852#0" expanded="true" />
+            <element signature="e#2907#2908#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/repository/RequestRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        <state relative-caret-position="526">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/entites/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="55" />
         </state>
       </provider>
     </entry>

@@ -73,7 +73,7 @@ public class BookService {
     }
 
     public Iterable<Book> getUsersBooks(String email){
-        //find all books owned by User
+
         List<OwnedBook> ownersBooks = ownedBooksRepository.findByEmail(email);
 
         List<Book> usersBooks = new ArrayList<>();
@@ -103,5 +103,9 @@ public class BookService {
 
         bookRepository.save(book);
         return true;
+    }
+
+    public Iterable<Book> findBooksByTitle(String title){
+        return bookRepository.findByTitle(title);
     }
 }

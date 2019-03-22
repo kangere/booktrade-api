@@ -42,4 +42,9 @@ public class BookController {
 
         return ResponseEntity.notFound().build();
     }*/
+
+    @GetMapping(value = "/api/books/{title}")
+    public Iterable<Book> getBooksByTitle(@PathVariable String title){
+        return service.findBooksByTitle(title);
+    }
 }

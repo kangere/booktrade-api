@@ -16,6 +16,8 @@ public class UserController {
         service.addUser(user);
     }
 
+    //TODO : only for testing purposes
+    // Production code would not expose user details like this
     @GetMapping(value = "/api/users")
     public Iterable<User> getAllUsers(){
         return service.getAllUsers();

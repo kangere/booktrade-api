@@ -23,8 +23,7 @@ public class UserService implements UserDetailsService {
         userRepository.save(user);
     }
 
-    //TODO : only for testing purposes
-    // Production code would not expose user details like this
+
     public Iterable<User> getAllUsers(){
         return userRepository.findAll();
 
