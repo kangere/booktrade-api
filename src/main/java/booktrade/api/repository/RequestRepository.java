@@ -6,6 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface RequestRepository extends CrudRepository<Request,Long> {
 
-    @Query(value = "select r from requests r where r.ownerEmail = ?1 and r.requesterEmail=?1")
-    Iterable<Request> findAllUserBooks(String email);
+    @Query(value = "select r from requests r where r.ownerEmail = ?1 or r.requesterEmail=?1")
+    Iterable<Request> findAllUserRequests(String email);
 }
