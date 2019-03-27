@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface BookRepository extends CrudRepository<Book,Long> {
 
@@ -15,6 +16,9 @@ public interface BookRepository extends CrudRepository<Book,Long> {
     @Query(value = "select b from books b where b.isbn IN (select distinct o.isbn from owned_books o)")
     List<Book> findAllAvailableBooks();
 
-    @Query(value = "select b from books b where b.title like %?1%")
-    Iterable<Book> findByTitle(String title);
+    @Query(value = "select b from books b where b.title like %?1% and b.isbn IN (select distinct o.isbn from owned_books o)")
+    List<Book> findByTitle(String title);
+
+    @Query(value = "select b from books b where isbn=?1 and b.isbn IN (select distinct o.isbn from owned_books o)")
+    Optional<Book> findByIsbn(Long isbn);
 }

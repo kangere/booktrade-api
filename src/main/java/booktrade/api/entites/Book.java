@@ -1,6 +1,7 @@
 package booktrade.api.entites;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -32,6 +33,8 @@ public class Book {
             inverseJoinColumns = {@JoinColumn(name="author_id",referencedColumnName = "author_id")}
     )
     private List<Author> authors;
+
+
 
     public Book() {
     }
@@ -100,4 +103,6 @@ public class Book {
     public void setAuthors(List<Author> authors) {
         this.authors = authors;
     }
+
+
 }

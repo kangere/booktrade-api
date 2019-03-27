@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+
 @Service
 public class BookService {
 
@@ -83,7 +84,19 @@ public class BookService {
         return usersBooks;
     }
 
-    public Iterable<Book> getAvailableBooks(){
+    public List<Book> getAvailableBooks(Optional<String> title, Optional<Long> isbn){
+
+
+        if(title.isPresent())
+              return bookRepository.findByTitle(title.get());
+         else if (isbn.isPresent()) {
+            Optional<Book> book=  bookRepository.findByIsbn(isbn.get());
+
+            if(book.isPresent())
+                return Arrays.asList(book.get());
+
+            return new ArrayList<>();
+        }
 
         return bookRepository.findAllAvailableBooks();
 
@@ -105,7 +118,9 @@ public class BookService {
         return true;
     }
 
-    public Iterable<Book> findBooksByTitle(String title){
-        return bookRepository.findByTitle(title);
+    public List<Book> findBooksByTitle(String title){
+       return bookRepository.findByTitle(title);
+
+
     }
 }
