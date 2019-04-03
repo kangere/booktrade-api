@@ -36,7 +36,7 @@ public class BookService {
         //Check if book details already exist
         if(!bookExists(b)) {
             //Save Authors
-            List<Author> authors = b.getAuthors();
+            var authors = b.getAuthors();
             authors.forEach(auth -> authorRepository.save(auth));
 
             //save books
@@ -118,9 +118,9 @@ public class BookService {
         return true;
     }
 
-    public List<Book> findBooksByTitle(String title){
-       return bookRepository.findByTitle(title);
 
+    public List<OwnedBook> getBookOwners(Long isbn,String email){
 
+        return ownedBooksRepository.findByIsbn(isbn,email);
     }
 }

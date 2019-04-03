@@ -37,6 +37,10 @@ public class OwnedBook {
     @JoinColumn(name = "book_isbn", referencedColumnName = "isbn",updatable = false,insertable = false)
     private Book book;
 
+    @ManyToOne
+    @JoinColumn(name = "email", referencedColumnName = "email",updatable = false,insertable = false)
+    private User user;
+
     public OwnedBook(){}
 
     public OwnedBook(Long isbn, String email, BookCondition bookCondition, TradeType tradeType, BigDecimal price, Book book) {
@@ -94,5 +98,13 @@ public class OwnedBook {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

@@ -39,6 +39,13 @@ public class BookController {
         service.deleteUserBook(email, isbn);
     }
 
+    @GetMapping(value = "/api/users/{email}/books/{isbn}/owners")
+    public List<OwnedBook> getBookOwners(@PathVariable Long isbn,
+                                         @PathVariable String email){
+
+        return service.getBookOwners(isbn,email);
+    }
+
     /*@PutMapping(value = "/api/users/{email}/books/{isbn}")
     public ResponseEntity<Object> updateBookDetails(@RequestBody Book book){
         if(service.updateBookDetails(book))

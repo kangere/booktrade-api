@@ -20,6 +20,10 @@ public class Book {
 
     private String language;
 
+    private String description;
+
+    private String thumbnail;
+
 
 
 
@@ -39,13 +43,16 @@ public class Book {
     public Book() {
     }
 
-    public Book(Long isbn, String title, Integer publishedDate, String publisher, String language, String externalLink) {
+    public Book(Long isbn, String title, Integer publishedDate, String publisher, String language, String externalLink,
+                String description, String thumbnail ) {
         this.isbn = isbn;
         this.title = title;
         this.publishedDate = publishedDate;
         this.publisher = publisher;
         this.language = language;
         this.externalLink = externalLink;
+        this.description = description;
+        this.thumbnail = thumbnail;
     }
 
     public Long getIsbn() {
@@ -104,5 +111,19 @@ public class Book {
         this.authors = authors;
     }
 
+    public String getDescription() {
+        return description;
+    }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
+    }
 }
