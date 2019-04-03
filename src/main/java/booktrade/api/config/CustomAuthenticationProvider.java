@@ -11,6 +11,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -21,6 +22,9 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
 
 
     @Override
@@ -34,10 +38,9 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         if(user == null)
             throw new UserNotFoundException("User Not Found" + email);
 
-        if(!user.getPassword().equals(password))
+        if(!passwordEncoder.matches(password,user.getPassword()))
             throw new WrongPasswordException();
 
-        System.out.println(user.toString());
         List<GrantedAuthority>  authorities = new ArrayList<>(user.getAuthorities());
 
         return new UsernamePasswordAuthenticationToken(email,password,authorities);
