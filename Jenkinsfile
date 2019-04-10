@@ -10,8 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'This is  a minimal pipeline'
-        sh '''mvn -B -DskipTests clean package
-'''
+        sh 'mvn clean package'
       }
     }
   }

@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface BookRepository extends CrudRepository<Book,Long> {
 
     /**
-     * Finds all the books the book details for those books that are available in stock
+     * Finds all the  book details for those books that are available in stock
      * @return List of books available
      */
     @Query(value = "select b from books b where b.isbn IN (select distinct o.isbn from owned_books o)")
