@@ -35,9 +35,9 @@ public class RequestService {
             repository.save(request);
 
             if(Request.RequestStatus.DECLINED.equals(request.getStatus())){
-                //TODO : do something
+                //TODO : Inform user
             } else if(Request.RequestStatus.RETRACTED.equals(request.getStatus())){
-                //TODO: do something
+                //TODO: Inform User
             } else if(Request.RequestStatus.COMPLETED.equals(request.getStatus())){
                 //TODO:  insert to orders table, inform users of trade
                 //TODO: inform users to drop off books to drop off point for delivery
