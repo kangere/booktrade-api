@@ -27,9 +27,9 @@ public class User {
 
     private String username;
 
-    //TODO: Encrypt password in application side
-   //TODO: Verify password encryption on application side
+
     @JsonIgnore
+    @Column(nullable = false)
     private String password;
 
     @Column(name = "phonenumber")

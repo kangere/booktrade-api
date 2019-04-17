@@ -17,15 +17,20 @@ public class UserController {
     }
 
     //TODO : only for testing purposes
-    // Production code would not expose user details like this
-    @GetMapping(value = "/api/users")
+    /*@GetMapping(value = "/api/users")
     public Iterable<User> getAllUsers(){
         return service.getAllUsers();
-    }
+    }*/
 
     @GetMapping(value = "/api/users/{email}")
     public User getUserDetails(@PathVariable String email){
 
         return service.findUserByEmail(email);
+    }
+
+    @PutMapping(value = "/api/users/{email}")
+    public void updateUserInformation(@RequestBody User user,
+                                      @PathVariable String email){
+        service.updateUser(user,email);
     }
 }
