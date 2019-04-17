@@ -4,6 +4,7 @@ import booktrade.api.exception.UserNotFoundException;
 import booktrade.api.exception.WrongPasswordException;
 import booktrade.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -23,6 +24,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     @Autowired
     private UserService userService;
 
+    @Lazy
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
