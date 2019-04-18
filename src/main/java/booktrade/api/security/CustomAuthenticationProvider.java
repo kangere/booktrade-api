@@ -1,13 +1,10 @@
-package booktrade.api.config;
+package booktrade.api.security;
 
 import booktrade.api.exception.UserNotFoundException;
 import booktrade.api.exception.WrongPasswordException;
 import booktrade.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationProvider;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -54,8 +51,5 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         return aClass.equals(UsernamePasswordAuthenticationToken.class);
     }
 
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+
 }
