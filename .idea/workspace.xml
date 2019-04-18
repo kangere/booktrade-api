@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f14da9b-4491-4e02-97e2-7e070d5a7137" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/config/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/config/CustomAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/booktrade/api/config/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/booktrade/api/config/SpringSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/entites/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/config/SpringSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/config/SpringSecurityConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/config/SpringSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="222">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,10 +75,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/config/CustomAuthenticationProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="582">
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2072#2073#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,9 +163,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-2" />
-    <option name="width" value="1366" />
-    <option name="height" value="770" />
+    <option name="x" value="229" />
+    <option name="y" value="27" />
+    <option name="width" value="965" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,77 +180,6 @@
             <path>
               <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="entites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booktrade-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="booktrade-api" type="b2602c69:ProjectViewProjectNode" />
@@ -398,7 +326,7 @@
       <workItem from="1554733788007" duration="4450000" />
       <workItem from="1554810337218" duration="16838000" />
       <workItem from="1555358480053" duration="8312000" />
-      <workItem from="1555511406419" duration="1435000" />
+      <workItem from="1555511406419" duration="3971000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Authors insertion and relation to books, added and tested delete endpoint">
       <created>1551733816725</created>
@@ -505,11 +433,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555460409788</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added Lazy annotation to passwordEncoder">
+      <created>1555513076631</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1555513076631</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Moved PasswordEncoder Bean">
+      <created>1555629163954</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1555629163954</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209363000" />
+    <option name="totallyTimeSpent" value="211899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -522,9 +464,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.207502" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.207502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -534,7 +475,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23778501" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.262215" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -580,7 +521,9 @@
     <MESSAGE value="Updated jenkinsfile" />
     <MESSAGE value="Made Request Query return only active requests" />
     <MESSAGE value="Added api endpoint to update user details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added api endpoint to update user details" />
+    <MESSAGE value="Added Lazy annotation to passwordEncoder" />
+    <MESSAGE value="Moved PasswordEncoder Bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved PasswordEncoder Bean" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.3.RELEASE/spring-security-config-5.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class">
@@ -908,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/config/SpringSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        <state relative-caret-position="222">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -918,10 +861,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/booktrade/api/config/CustomAuthenticationProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="582">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
           </folding>
         </state>
       </provider>
