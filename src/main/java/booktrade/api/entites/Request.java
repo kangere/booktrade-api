@@ -42,6 +42,14 @@ public class Request {
     @Temporal(TemporalType.TIMESTAMP)
     private Date completedAt;
 
+    @ManyToOne
+    @JoinColumn(name = "owner_book", referencedColumnName = "isbn",updatable = false,insertable = false)
+    private Book ownedBook;
+
+    @ManyToOne
+    @JoinColumn(name = "requester_book", referencedColumnName = "isbn",updatable = false,insertable = false)
+    private Book requestersBook;
+
     public Request(){}
 
     public Long getRequestId() {
@@ -106,5 +114,21 @@ public class Request {
 
     public void setCompletedAt(Date completedAt) {
         this.completedAt = completedAt;
+    }
+
+    public Book getOwnedBook() {
+        return ownedBook;
+    }
+
+    public void setOwnedBook(Book ownedBook) {
+        this.ownedBook = ownedBook;
+    }
+
+    public Book getRequestersBook() {
+        return requestersBook;
+    }
+
+    public void setRequestersBook(Book requestersBook) {
+        this.requestersBook = requestersBook;
     }
 }

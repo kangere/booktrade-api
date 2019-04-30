@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -43,5 +44,9 @@ public class RequestService {
                 //TODO: inform users to drop off books to drop off point for delivery
             }
         }
+    }
+
+    public List<Request> getUserCompletedRequests(String email){
+        return repository.findAllCompletedRequests(email);
     }
 }
