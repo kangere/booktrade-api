@@ -15,6 +15,10 @@ public class OwnedBook {
         SELL,TRADE,TRADE_OR_SELL
     }
 
+    public enum Availability{
+        True,False
+    }
+
     @Id
     @Column(name = "book_isbn")
     private Long isbn;
@@ -31,6 +35,11 @@ public class OwnedBook {
     private TradeType tradeType;
 
     private BigDecimal price;
+
+    @Enumerated(EnumType.STRING)
+    private Availability  available;
+
+
 
 
     @ManyToOne
@@ -106,5 +115,13 @@ public class OwnedBook {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Availability getAvailable() {
+        return available;
+    }
+
+    public void setAvailable(Availability available) {
+        this.available = available;
     }
 }

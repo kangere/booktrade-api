@@ -49,7 +49,7 @@
     </dependencies>
 
     <properties>
-        <java.version>1.10</java.version>
+        <java.version>1.11</java.version>
     </properties>
 
     <build>

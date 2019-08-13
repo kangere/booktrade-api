@@ -14,7 +14,7 @@ public interface BookRepository extends CrudRepository<Book,Long> {
      * @return List of books available
      */
 
-    @Query(value = "select b from books b where b.isbn IN (select distinct o.isbn from owned_books o)")
+    @Query(value = "select b from books b where b.isbn IN (select distinct o.isbn from owned_books o where o.available = 'True')")
     List<Book> findAllAvailableBooks();
 
     @Query(value = "select b from books b where b.title like %?1% and b.isbn IN (select distinct o.isbn from owned_books o)")

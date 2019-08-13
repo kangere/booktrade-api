@@ -17,6 +17,6 @@ public interface OwnedBooksRepository extends CrudRepository<OwnedBook, OwnedBoo
     List<OwnedBook> findByEmail(String email);
 
 
-    @Query(value = "select o from owned_books o where o.isbn=?1 and o.email <> ?2")
+    @Query(value = "select o from owned_books o where o.isbn=?1 and o.email <> ?2 and o.available ='True'")
     List<OwnedBook> findByIsbn(Long isbn, String email);
 }
