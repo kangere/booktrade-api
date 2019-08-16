@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f14da9b-4491-4e02-97e2-7e070d5a7137" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBooksPK.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBooksPK.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/booktrade/api/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/BookTradeApiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/controller/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/Author.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/MyUserPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook$BookCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook$TradeType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/OwnedBooksPK.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/User$AccountType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/entites/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/repository/AuthorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/repository/BookRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/repository/OwnedBooksRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/booktrade/api/service/UserService.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +91,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -199,7 +215,7 @@
       <workItem from="1564532082469" duration="58000" />
       <workItem from="1565656466276" duration="2972000" />
       <workItem from="1565659522144" duration="1199000" />
-      <workItem from="1565827986724" duration="724000" />
+      <workItem from="1565827986724" duration="2874000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Authors insertion and relation to books, added and tested delete endpoint">
       <created>1551733816725</created>
@@ -376,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565657980661</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Updated pom.xml">
+      <created>1565831403378</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1565831403378</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -428,81 +451,5 @@
     <MESSAGE value="Updated Jenkinsfile" />
     <MESSAGE value="Updated pom.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated pom.xml" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>booktrade-api</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
